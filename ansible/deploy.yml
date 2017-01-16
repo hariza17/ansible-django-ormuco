@@ -38,8 +38,8 @@
     - name: make sure gunicorn server is running
       service: name=gunicorn state=started enabled=yes
     
-#    - name: Go to the folder and execute command
-#      command: chdir={{ install_root }}/{{ project_name }} /usr/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 {{ wsgi_module }}:application
+    - name: Go to the folder and execute command
+      command: chdir={{ install_root }}/{{ project_name }} /usr/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 {{ wsgi_module }}:application
 
 
   handlers: 
