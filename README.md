@@ -8,7 +8,7 @@
            
 #### 2- generate a Key Pair for authentication without password
       $ cd ~/.ssh/
-      $ cd ssh-keygen -t rsa -b 2048 -v     
+      $ ssh-keygen -t rsa -b 2048 -v     
       
       Enter file in which to save the key:key
       Enter passphrase (empty for no passphrase):nothing, empty
